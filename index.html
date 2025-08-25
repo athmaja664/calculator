@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/548/548353.png">
+    <title>Calculator</title>
+     <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="./script.js"></script>
+    <script src="./script.js"></script>
+    <style>
+        
+        
+      .c1{
+       background-color: bisque;
+       border-radius: 20px;
+       padding: 20px;
+       box-shadow: 3px 4px 5px 6px rgb(81, 81, 81);
+      } 
+      .btn{
+        color: darkslateblue;
+      } 
+      .btn:hover{
+      box-shadow: 1px 2px 3px 4px black;
+      }
+       #result{
+        width: 300px;
+       }
+       .green:hover{
+        background-color: rgb(143, 182, 143);
+       }
+       .red:hover{
+        background-color: rgb(244, 124, 124);
+       }
+    </style>
+</head>
+<body><br><br>
+    <h1 class="text-center text-info"> Calculator</h1>
+    <div class="r1 row text-center">
+        
+        <div class="col-4 a "></div>
+        <div class="c1 col-4 mt-5 ">
+            <input id="result" type="text" placeholder="Enter"><br>
+            <div class="row mt-5">
+                <div class="col-3 "><button class="btn" type="button" onclick="displayNumber(7)">7</button></div>
+                <div class="col-3 "><button class="btn"  type="button" onclick="displayNumber(8)">8</button></div>
+                <div class="col-3"><button class="btn"  type="button" onclick="displayNumber(9)">9</button></div>
+                <div class="col-3"><button class="btn green"  type="button" onclick="displayNumber('*')">x</button></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3 "><button class="btn" type="button" onclick="displayNumber(4)">4</button></div>
+                <div class="col-3 "><button class="btn"  type="button" onclick="displayNumber(5)">5</button></div>
+                <div class="col-3"> <button class="btn"  type="button" onclick="displayNumber(6)">6</button></div>
+                <div class="col-3">  <button class="btn green"  type="button" onclick="displayNumber('-')">-</button></div>
+            </div>
+             <div class="row mt-5">
+                <div class="col-3 "><button class="btn"  type="button" onclick="displayNumber(1)">1</button></div>
+                <div class="col-3 "><button class="btn"  type="button" onclick="displayNumber(2)">2</button></div>
+                <div class="col-3"> <button class="btn"  type="button" onclick="displayNumber(3)">3</button></div>
+                <div class="col-3"> <button class="btn green"  type="button" onclick="displayNumber('+')">+</button></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-3 "><button class="btn red"  type="button" onclick="clearText()">AC</button></div>
+                <div class="col-3 "><button class="btn"  type="button" onclick="displayNumber(0)">0</button></div>
+                <div class="col-3">  <button class="btn green"  type="button" onclick="displayNumber('/')">/</button></div>
+                <div class="col-3"> <button class="btn red"  type="button" onclick="calculation()">=</button></div>
+            </div>
+             <div class="row mt-5">
+                <div class="col-3 "><button class="btn red"  type="button" onclick="lastDigit()"><i class="fa-solid fa-backward"></i></button> </div>
+                </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    
+<!-- <div class="row">
+    <row class="col-3 text-center">a</row>
+    <row class="col-3  text-center">b</row>
+    <row class="col-3  text-center">c</row>
+    <row class="col-3  text-center">d</row>
+</div> -->
+
+
+
+
+    <!-- <input id="result" type="text" placeholder="Enter">
+    <button type="button" onclick="displayNumber(7)">7</button>
+     <button type="button" onclick="displayNumber(8)">8</button>
+     <button type="button" onclick="displayNumber(9)">9</button>
+      <button type="button" onclick="displayNumber('*')">x</button>
+      <button type="button" onclick="displayNumber(4)">4</button>
+      <button type="button" onclick="displayNumber(5)">5</button>
+      <button type="button" onclick="displayNumber(6)">6</button>
+      <button type="button" onclick="displayNumber('-')">-</button>
+      <button type="button" onclick="displayNumber(1)">1</button>
+      <button type="button" onclick="displayNumber(2)">2</button>
+       <button type="button" onclick="displayNumber(3)">3</button>
+       <button type="button" onclick="displayNumber('+')">+</button>
+       <button type="button" onclick="clearText()">AC</button>
+       <button type="button" onclick="displayNumber(0)">0</button>
+       <button type="button" onclick="displayNumber('/')">/</button>
+       <button type="button" onclick="calculation()">=</button>
+       <button type="button" onclick="lastDigit()">Back</button>             -->
+</body>
+</html>
